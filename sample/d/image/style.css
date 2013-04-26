@@ -1,0 +1,31 @@
+html,body{ margin:0; padding:0 10px; font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; }
+h1,h2,h3,h4,h5,h6,p,div{ font-size:12px; }
+h1{ font-size:24px; padding:5px 0; border-bottom:dotted 1px #000000; }
+h2{ font-size:16px; padding:2px 0; border-bottom:dotted 1px #66CC33; color:#468D23; }
+h4{ font-size:14px; }
+ol{ list-style:inside decimal; margin:0; padding:0; }
+a{ text-decoration:none; color:#039; }
+a:hover{ text-decoration:underline; }
+table tr:first-child td{ background:#666; color:#FFF; }
+tr{ border:none; padding:0; margin:0; }
+td{ border-bottom:solid 1px #666; padding:2px; margin:0; }
+ul{ margin:0; padding:0; list-style:none; }
+ul li{ margin:0.6em 0; border-bottom:dotted 1px #DFF4D4; }
+
+.message{ padding:7px; border:dotted 1px #CCCCCC; }
+.warning{ border-color:#F99; color:#C00; }
+
+.tag-key{ color:#468D23; }
+.box{ padding:0 6px; margin:6px 0; }
+
+.class-desc h4{ color:#468D23; margin:6px 0 0 0; }
+.class-desc{ border:dashed 1px #DFF4D4; }
+.class-desc table tr:first-child td{ background:#468D23; color:#FFF; }
+.class-desc td{ border-bottom:solid 1px #468D23; }
+
+h3.method{ color:#E2630E; font-size:14px; border-bottom:dotted 1px #E2630E; padding:3px 0; }
+h3.method a{ color:#E2630E; }
+.method-desc h4{ color:#E2630E; margin:6px 0 0 0; }
+.method-desc{ border:dashed 1px #FCE2D0; }
+.method-desc table tr:first-child td{ background:#E2630E; color:#FFF; }
+.method-desc td{ border-bottom:solid 1px #FCE2D0; }

@@ -1,0 +1,205 @@
+@font-face{}
+@font-face{}
+body{font-size:100%;}
+
+
+.center{text-align:center;}
+
+.left{text-align:left;}
+
+.right{text-align:right;}
+
+.top0{margin-top:0em;}
+
+.top1{margin-top:1em;}
+
+.bottom0{margin-bottom:0em;}
+
+.bottom1{margin-bottom:1em;}
+
+.bottom2{margin-bottom:2em;}
+
+.left0{margin-left:0em;}
+
+.left2{margin-left:2em;}
+
+.right2{margin-right:2em;}
+
+.noindent{text-indent:0em;}
+
+.indent{text-indent:2em;}
+
+hr{width:100%;color:"#000000";size:"1px";}
+
+.cover{width:100%;}
+
+
+.smy-sm{font-size:2.5em;
+		
+		margin-top:2em;
+		margin-bottom:2em;
+		text-align:center;
+		}
+
+.smy-sm1{font-size:2.5em;
+		
+		margin-top:1em;
+		margin-bottom:0em;
+		text-align:center;
+		}
+
+.smy-fsm{font-size:1.8em;
+		
+		margin-bottom:2em;
+		margin-top:0em;
+		text-align:center;
+		}
+
+.smy-fsm1{font-size:1.8em;
+		
+		margin-bottom:2em;
+		margin-top:1em;
+		text-align:center;
+		}
+
+.smy-zz{font-size:1.6em;
+		
+		margin-top:2em;
+		margin-bottom:2em;
+		text-align:center;
+		}
+
+.smy-cbs{font-size:1.4em;
+		
+		margin-top:1em;
+		text-align:center;
+		}
+
+.smy-qt{font-size:1.4em;
+		
+		text-align:center;
+		}
+
+
+.bq{font-size:1.15em;
+	
+	line-height:1.5em;
+	}
+
+
+.ml-bt{font-size:2.0em;
+	
+	margin-bottom:1em;
+	margin-top:1em;
+	text-align:center;
+	font-weight:bold;
+	}
+
+.ml-1{font-size:1.5em;
+	text-indent:2em;
+	
+	line-height:1.5em;
+	text-align:justify;
+	}
+
+.ml-2{font-size:1.3em;
+	text-indent:4em;
+	
+	line-height:1.5em;
+	text-align:justify;
+	}
+
+.ml-3{font-size:1.15em;
+	text-indent:6em;
+	
+	line-height:1.5em;
+	text-align:justify;
+	}
+.ml-4{font-size:1.15em;
+	text-indent:8em;
+	
+	line-height:1.5em;
+	text-align:justify;
+	}
+
+
+
+h1{font-size:1.5em;
+	
+	margin-bottom:1em;
+	margin-top:1em;
+	font-weight:bold;
+	text-align:center;
+	}
+
+h2{font-size:1.3em;
+	
+	margin-bottom:1em;
+	margin-top:1em;
+	font-weight:bold;
+	text-align:center;
+	}
+
+h3{font-size:1.15em;
+
+margin-bottom:1em;
+margin-top:1em;
+font-weight:bold;
+text-align:center;
+}
+
+
+.ts{font-size:1em;
+	line-height:1.3em;
+	
+	text-align:center;
+	margin-bottom:8px;
+	}
+
+.ts1{font-size:1em;
+	text-indent:2em;
+	line-height:1.3em;
+	
+	text-align:left;
+	margin-bottom:8px;
+	}
+
+
+.tp{margin-top:8px;
+	margin-bottom:8px;
+	text-align:center;
+	}
+
+.tp-l{float:left;
+	margin:8px;
+}
+
+.tp-r{float:right;
+	margin:8px;
+	}
+
+.tp-z{text-align:left;
+	margin:8px;
+	}
+
+.tp-y{text-align:right;
+	margin:8px;
+	}
+
+.fnote{
+		font-size:0.9em;
+		
+		text-align:justify;
+		text-indent:2em;
+		line-height:1.5em;
+		margin-top:0px;
+		margin-bottom:0px;
+}
+p{font-size:1.15em;
+
+text-align:justify;
+text-indent:2em;
+line-height:1.5em;
+margin-top:0px;
+margin-bottom:0px;
+}

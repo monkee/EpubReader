@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package version="2.0" unique-identifier="PrimaryID" mlns="http://www.idpf.org/2007/opf">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+<dc:title>白领黑皮书</dc:title>
+<dc:identifier opf:scheme="ISBN">978-7-5086-1581-3</dc:identifier>
+<dc:language>zh-cn</dc:language>
+<dc:creator>毕群</dc:creator>
+<dc:publisher>中信出版社</dc:publisher>
+<dc:description></dc:description>
+<dc:coverage></dc:coverage>
+<dc:source>中信出版社</dc:source>
+<dc:date>2009-07</dc:date>
+<dc:rights></dc:rights>
+<dc:subject></dc:subject>
+<dc:contributor></dc:contributor>
+<dc:type>[type]</dc:type>
+<dc:format></dc:format>
+<dc:relation></dc:relation>
+<dc:builder></dc:builder>
+<dc:builder_version></dc:builder_version>
+<meta name="cover" content="cover-image"/>
+</metadata>
+<manifest>
+<!-- Content Documents -->
+<item id="main-css" href="css/main.css" media-type="text/css"/>
+<item id="coverpage"  href="coverpage.html"  media-type="application/xhtml+xml"/>
+<item id="chapter1"  href="chapter1.html"  media-type="application/xhtml+xml"/>
+<item id="chapter2"  href="chapter2.html"  media-type="application/xhtml+xml"/>
+<item id="chapter3"  href="chapter3.html"  media-type="application/xhtml+xml"/>
+<item id="chapter4"  href="chapter4.html"  media-type="application/xhtml+xml"/>
+<item id="chapter5"  href="chapter5.html"  media-type="application/xhtml+xml"/>
+<item id="chapter6"  href="chapter6.html"  media-type="application/xhtml+xml"/>
+<item id="chapter7"  href="chapter7.html"  media-type="application/xhtml+xml"/>
+<item id="chapter8"  href="chapter8.html"  media-type="application/xhtml+xml"/>
+<item id="chapter9"  href="chapter9.html"  media-type="application/xhtml+xml"/>
+<item id="chapter10"  href="chapter10.html"  media-type="application/xhtml+xml"/>
+<item id="chapter11"  href="chapter11.html"  media-type="application/xhtml+xml"/>
+<item id="chapter12"  href="chapter12.html"  media-type="application/xhtml+xml"/>
+<item id="chapter13"  href="chapter13.html"  media-type="application/xhtml+xml"/>
+
+<item id="ncx"  href="fb.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="css" href="css/main.css" media-type="text/css"/>
+<item id="cover-image" href="images/cover.jpg" media-type="image/jpeg"/>
+</manifest>
+<spine toc="ncx">
+<itemref idref="coverpage" linear="yes"/>
+<itemref idref="chapter1" linear="yes"/>
+<itemref idref="chapter2" linear="yes"/>
+<itemref idref="chapter3" linear="yes"/>
+<itemref idref="chapter4" linear="yes"/>
+<itemref idref="chapter5" linear="yes"/>
+<itemref idref="chapter6" linear="yes"/>
+<itemref idref="chapter7" linear="yes"/>
+<itemref idref="chapter8" linear="yes"/>
+<itemref idref="chapter9" linear="yes"/>
+<itemref idref="chapter10" linear="yes"/>
+<itemref idref="chapter11" linear="yes"/>
+<itemref idref="chapter12" linear="yes"/>
+<itemref idref="chapter13" linear="yes"/>
+
+</spine>
+<guide>
+<reference type="cover" title="封面"  href="coverpage.html"/>
+<reference type="text" title="书名页"  href="chapter1.html"/>
+<reference type="text" title="版权页"  href="chapter2.html"/>
+<reference type="text" title="洪晃说（名流、著名媒体人）"  href="chapter3.html"/>
+<reference type="text" title="梁冬说（前百度营销副总裁）"  href="chapter4.html"/>
+<reference type="text" title="刘仪伟说（著名主持人）"  href="chapter5.html"/>
+<reference type="toc" title="目录"  href="chapter6.html"/>
+<reference type="text" title="序　Ella毕，The Talker"  href="chapter7.html"/>
+<reference type="text" title="办公室生存"  href="chapter8.html"/>
+<reference type="text" title="办公室情色"  href="chapter9.html"/>
+<reference type="text" title="办公室时尚"  href="chapter10.html"/>
+<reference type="text" title="办公室政治"  href="chapter11.html"/>
+<reference type="text" title="逃离办公室"  href="chapter12.html"/>
+<reference type="text" title="后记　一期一会"  href="chapter13.html"/>
+
+</guide>
+</package>
