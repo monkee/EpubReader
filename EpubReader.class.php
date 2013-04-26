@@ -38,11 +38,18 @@ function __phpepubReader_autoload($class){
 
 class EpubReader
 {
-	const CONTAINER = 'META-INF/container.xml';	//容器
+	const CONTAINER = 'META-INF/container.xml';	//默认的容器路径
 
-	private $zip = null;
-	private $opf = null;
+	private $zip = null; //zip包对象
+	private $opf = null; //opf文件对象，也是epub的核心文件
+	private $ncx = null; //ncx文件对象，辅助文件
 
+	/**
+	 * 初始化，使用epub文件开始
+	 *
+	 * @param string $epub epub文件路径，文件必须存在，否则会出现异常
+	 *
+	 */
 	public function __construct($epub){
 		$this->zip = new EpubReader_Zip($epub);
 
@@ -65,7 +72,7 @@ class EpubReader
 	 *
 	 * @param int $page 页码从0开始，封面
 	 *
-	 * @return string
+	 * @return string(stream)
 	 */
 	public function getFileContentByPage($page){
 		$filename = $this->opf->getFileNameByPage($page);
@@ -73,11 +80,41 @@ class EpubReader
 		return $this->zip->getContentByFilename($filename);
 	}
 
+	/**
+	 * 根据文件路径获取内容
+	 *
+	 * 这个路径必须是相对于zip包的全局位置
+	 * 否则，可能无法取到文件
+	 *
+	 * @param string $path
+	 *
+	 * @return string(stream)
+	 */
+	public function getFileContentByPath($path){
+		return $this->zip->getContentByFilename($path);
+	}
+
+	/**
+	 * 执行获取meta信息的逻辑
+	 *
+	 * 这里会调用opf里的meta数据
+	 * 当然，这里也有个坑：如果手误调用了不存在的方法，那么就。。。
+	 *
+	 * @method
+	 *
+	 * @return mixed
+	 */
 	public function __call($method, $argv){
 		if(strpos($method, 'get') === 0){
 			return $this->opf->getMeta(strtolower(substr($method, 3)));
 		}
 	}
+
+	/**
+	 * 获取ncx对象
+	 *
+	 * @return EpubReader_Ncx 对象
+	 */
 	private function getNcx(){
 		if(empty($this->ncx)){
 			$ncx = $this->opf->getNcxFilename();
@@ -87,6 +124,12 @@ class EpubReader
 		return $this->ncx;
 	}
 
+	/**
+	 * 初始化
+	 *
+	 * 1. 初始化opf对象
+	 * 2. 建立路径规则
+	 */
 	private function init(){
 		//初始化opf
 		$opfFile = $this->zip->getContentByFilename(self::CONTAINER);
